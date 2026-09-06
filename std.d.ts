@@ -74,7 +74,7 @@ declare module "std" {
   export function tmpFile(errorObj?: ErrorOptions): File | null;
   export function puts(str: string): void;
   export function printf(fmt: string, ...args: any[]): void;
-  export function sprintf(fmt: string, ...args: any[]): void;
+  export function sprintf(fmt: string, ...args: any[]): string;
 
   export function strerror(errorno: Error): string;
   export function gc(): void;
